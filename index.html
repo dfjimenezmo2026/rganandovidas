@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Ganando Vidas / Noticias IMID</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols (Icons) -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- App Container -->
+    <div class="app-container">
+        <!-- Sidebar Overlay (Hidden by default) -->
+        <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+        <!-- Sidebar Drawer -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <!-- Flame Logo Placeholder -->
+                    <div class="flame-icon">🔥</div>
+                </div>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-item active">
+                    <span class="material-symbols-rounded icon">newspaper</span>
+                    <span class="text">Noticias IMID</span>
+                    <span class="material-symbols-rounded chevron">chevron_right</span>
+                </li>
+                <li class="menu-item">
+                    <span class="material-symbols-rounded icon">music_note</span>
+                    <span class="text">Radio Ganando Vidas</span>
+                    <span class="material-symbols-rounded chevron">chevron_right</span>
+                </li>
+                <li class="menu-item">
+                    <span class="material-symbols-rounded icon">photo_library</span>
+                    <span class="text">Fotos IMID</span>
+                    <span class="material-symbols-rounded chevron">chevron_right</span>
+                </li>
+                <li class="menu-item">
+                    <span class="material-symbols-rounded icon">celebration</span>
+                    <span class="text">Generación Desafío Kids</span>
+                    <span class="material-symbols-rounded chevron">chevron_right</span>
+                </li>
+                <li class="menu-item">
+                    <span class="material-symbols-rounded icon">diversity_3</span>
+                    <span class="text">Labor Social IMID</span>
+                    <span class="material-symbols-rounded chevron">chevron_right</span>
+                </li>
+                <li class="menu-item">
+                    <span class="material-symbols-rounded icon">location_on</span>
+                    <span class="text">Dirección IMID</span>
+                    <span class="material-symbols-rounded chevron">chevron_right</span>
+                </li>
+                <li class="menu-item">
+                    <span class="material-symbols-rounded icon">shopping_cart</span>
+                    <span class="text">Compras</span>
+                    <span class="material-symbols-rounded chevron">chevron_right</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <button id="menu-toggle" class="icon-button" aria-label="Open Menu">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+                <h1 class="page-title">Noticias IMID</h1>
+                <button class="icon-button" aria-label="Search">
+                    <span class="material-symbols-rounded">search</span>
+                </button>
+            </header>
+
+            <!-- Categories Tabs -->
+            <div class="category-tabs-wrapper">
+                <div class="category-tabs" id="category-tabs">
+                    <button class="tab active">Todos</button>
+                    <button class="tab">RadioGV</button>
+                    <button class="tab">cultos</button>
+                    <button class="tab">devocionales</button>
+                    <button class="tab">ministros</button>
+                    <button class="tab">programas</button>
+                </div>
+            </div>
+
+            <!-- Feed Logo Banner -->
+            <div class="logo-banner">
+                <div class="logo-content">
+                    <div class="flame-icon banner-flame">🔥</div>
+                    <div class="banner-text">
+                        <span class="small-text">IGLESIA</span>
+                        <span class="small-text">MINISTERIO INTERNACIONAL</span>
+                        <span class="large-text">DESAFÍO</span>
+                    </div>
+                    <div class="globe-icon">🌍</div>
+                </div>
+            </div>
+
+            <!-- News Feed -->
+            <section class="feed">
+                <!-- Card 1: Ayuno -->
+                <article class="feed-card primary" data-category="cultos">
+                    <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?auto=format&fit=crop&q=80&w=800"
+                        alt="Ayuno Congregacional" class="card-bg">
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h2 class="card-title">Ayuno Congregacional</h2>
+                            <p class="card-subtitle">Aprende a dominar tu carne</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="like-btn">
+                                <span class="material-symbols-rounded">favorite_border</span>
+                                <span>16</span>
+                            </button>
+                            <span class="time-ago">7 months ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2: Fabian Narvaez (Ministro) -->
+                <article class="feed-card secondary" data-category="ministros">
+                    <img src="https://images.unsplash.com/photo-1544985226-72aa4fa84e72?auto=format&fit=crop&q=80&w=800"
+                        alt="Fabian Narvaez" class="card-bg">
+                    <div class="card-overlay gradient-bottom">
+                        <div class="card-content">
+                            <h2 class="card-title text-dark">Fabian Narvaez</h2>
+                            <p class="card-subtitle text-dark">Ministro</p>
+                        </div>
+                        <div class="card-footer text-dark">
+                            <button class="like-btn">
+                                <span class="material-symbols-rounded">favorite_border</span>
+                                <span>6</span>
+                            </button>
+                            <span class="time-ago">7 months ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3: Oscar Agudelo (Ministro) -->
+                <article class="feed-card secondary" data-category="ministros">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
+                        alt="Oscar Agudelo" class="card-bg">
+                    <div class="card-overlay gradient-bottom">
+                        <div class="card-content">
+                            <h2 class="card-title text-dark">Oscar Agudelo</h2>
+                            <p class="card-subtitle text-dark">Ministro</p>
+                        </div>
+                        <div class="card-footer text-dark">
+                            <button class="like-btn">
+                                <span class="material-symbols-rounded">favorite_border</span>
+                                <span>12</span>
+                            </button>
+                            <span class="time-ago">5 months ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4: Flankin Vanegas (Ministro) -->
+                <article class="feed-card secondary" data-category="ministros">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800"
+                        alt="Flankin Vanegas" class="card-bg">
+                    <div class="card-overlay gradient-bottom">
+                        <div class="card-content">
+                            <h2 class="card-title text-dark">Flankin Vanegas</h2>
+                            <p class="card-subtitle text-dark">Ministro</p>
+                        </div>
+                        <div class="card-footer text-dark">
+                            <button class="like-btn">
+                                <span class="material-symbols-rounded">favorite_border</span>
+                                <span>8</span>
+                            </button>
+                            <span class="time-ago">4 months ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5: Gloria Uribe (Ministro) -->
+                <article class="feed-card secondary" data-category="ministros">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800"
+                        alt="Gloria Uribe" class="card-bg">
+                    <div class="card-overlay gradient-bottom">
+                        <div class="card-content">
+                            <h2 class="card-title text-dark">Gloria Uribe</h2>
+                            <p class="card-subtitle text-dark">Ministro</p>
+                        </div>
+                        <div class="card-footer text-dark">
+                            <button class="like-btn">
+                                <span class="material-symbols-rounded">favorite_border</span>
+                                <span>24</span>
+                            </button>
+                            <span class="time-ago">6 months ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6: Mujeres -->
+                <article class="feed-card gold" data-category="programas">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800"
+                        alt="Mujeres Que Cambiaron La Historia" class="card-bg filter-gold">
+                    <div class="card-overlay">
+                        <div class="card-content">
+                            <h2 class="card-title">Mujeres Que Cambiaron La Historia</h2>
+                            <p class="card-subtitle">Extendemos nuestra invitación a esas mujeres...</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="like-btn">
+                                <span class="material-symbols-rounded">favorite_border</span>
+                                <span>16</span>
+                            </button>
+                            <span class="time-ago">7 months ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Spacer for bottom player -->
+                <div class="feed-spacer"></div>
+            </section>
+        </main>
+
+        <!-- Bottom Audio Player -->
+        <div class="audio-player">
+            <button id="play-pause-btn" class="play-button" aria-label="Play Radio">
+                <span class="material-symbols-rounded play-icon">play_circle</span>
+            </button>
+            <div class="marquee-container">
+                <div class="marquee-text">
+                    Tu Radio Ganando Vidas - Crecimiento Espiritual • Transmitiendo 24 Horas
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
